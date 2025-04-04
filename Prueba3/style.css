@@ -1,0 +1,53 @@
+body {
+    background-image: url(/images/imagen\ ejemplo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    display: flex;
+    padding: 10px;
+    margin: 50px auto;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+}
+
+
+.menu span {
+    padding: 15px 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.menu span:hover {
+    background-color: red;
+}
+
+/* Estilos del submenú */
+.submenu a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+.submenu a:hover {
+    background-color: black;
+}

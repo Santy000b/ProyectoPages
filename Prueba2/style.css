@@ -1,0 +1,233 @@
+
+body {
+    
+    background: url(/images/grieta.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+header p {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+
+ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+
+img {
+    border-radius: 50%;
+    margin: 20px auto;
+    display: flex;
+    border: 3px solid white; 
+}
+
+footer {
+    display: flex;
+    margin-top: auto; 
+    width: 100%;
+    
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.enlaces {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 375px) {
+    div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 408px) {
+    div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+}
+.social-btn {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 50px;
+    padding: 5px 20px;
+    background-color: red;
+    border-radius: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    border: 2px solid transparent;
+    text-align: center;
+    max-width: 100px;
+    flex: 1 1 auto;
+}
+
+
+a .insta-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.social-btn:hover {
+    background-color: blue;
+    color: aqua;
+    transition: all 0.3s;
+    transform: scale(1.05);
+}
+
+.social-btn img {
+    width: 40px;
+    height: 40px;
+    border-color: black;
+}
+
+
+.social-btn .icon {
+    background-color: white;
+}
+.social-btn .icon3 {
+    background-color: purple;
+}
+
+
+/*
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    background: url(/images/grieta.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    text-align: center;
+}
+
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+
+img {
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    border: 3px solid white;
+}
+
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+/
+.enlaces {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 50px;
+    padding: 5px 20px;
+    background-color: aqua;
+    border-radius: 80px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    max-width: 130px;
+    flex: 1 1 auto;
+}
+
+
+.social-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.social-btn:hover {
+    background-color: blue;
+    color: aqua;
+    transition: all 0.3s;
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 414px) {
+    .social-btn {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+        text-align: center;
+        max-width: 100px;
+    }
+
+    .social-btn img {
+        width: 25px;
+        height: 25px;
+    }
+}
+*/
+

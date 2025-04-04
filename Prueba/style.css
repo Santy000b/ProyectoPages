@@ -1,0 +1,222 @@
+body {
+    background-image: url(/images/grieta.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 10px;
+    margin: 10px;
+    color: black; /* Color del texto para que sea legible */
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 5px;
+        margin: 5px;
+    }
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px; /* Reduce el padding en pantallas pequeñas */
+    }
+}
+
+h1 {
+    font-size: 2rem; /* Tamaño de fuente para pantallas grandes */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; /* Reduce el tamaño de la fuente */
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+
+.imagenes-lol {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+.imagenes-lol img {
+    max-width: 100%; /* La imagen no superará el ancho de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+}
+
+h3 {
+    margin-top: 5px;
+    color: purple;
+}
+
+.twitch {
+    display: block; /* Cambia a bloque para ocupar el 100% del ancho */
+    text-decoration: none;
+    font-weight: bold;
+    color: purple;
+    text-align: center; /* Centra el texto */
+    margin: 10px 0; /* Ajusta los márgenes */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+aside section{
+    border: 5px solid red;
+    background-color: black;
+    padding: 10px;
+    margin: 10px 0;
+    flex: 1 1 150px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    aside section {
+        flex: 1 1 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+    }
+}
+
+
+aside {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    gap: 90px;
+    flex-wrap: wrap;
+    
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+
+.list-item {
+    margin: 5px 0;
+    color: purple;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.lee {
+   color: red; 
+}
+.graves {
+    color: yellow
+}
+.gragas {
+    color: purple;
+}
+.ekko {
+    color: aqua;
+}
+
+.horas, .Campeones, .Maestrias {
+    text-decoration: underline;
+    color: gold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%; /* Ocupa el 100% del ancho */
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+    margin-bottom: 10px; /* Espacio entre campos */
+    padding: 8px; /* Añade un poco de padding */
+    border: 1px solid #ccc; /* Borde sutil */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+    left: -20px;
+}
+
+@media (max-width: 768px){
+    footer {
+        text-align: left;
+        padding: 20px;
+        margin-top: 20px;
+    }
+}
+
+fieldset {
+    border: 2px solid white;
+    padding: 10px;
+}
+.contact {
+    /*
+    width: 100%; 
+    max-width: 400px; 
+    margin: 0 auto; 
+    */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 300px;
+    
+}
+
+.enviar {
+    background-color: black;
+    color: red;
+    padding: 10px 20px; /* Añade más padding */
+    border: none; /* Elimina el borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+.enviar:hover {
+    background-color: #333;
+}
+
+
+legend {
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.label-titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+}

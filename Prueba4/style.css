@@ -1,0 +1,187 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    margin: 0;   
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+    align-items: center;
+}
+
+
+.spotify-logo {
+    width: 150px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+
+.material-symbols-outlined.dropdown-arrow {
+    color: white;
+    font-size: 20px;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+.material-symbols-outlined.active {
+    color: #1DB954;
+}
+
+
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+    gap: 40px; /* Espacio entre items */
+}
+
+.menu-link {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s; /* Suaviza el efecto hover */
+}
+/*
+.profile-menu {
+
+}
+*/
+.menu-link:hover {
+    color: #1DB954; /* Verde de Spotify al hover */
+}
+
+.profile-counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profile-img {
+    max-width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+}
+
+
+.separador {
+    color: white;
+    font-weight: bold;
+}
+
+.dropdown-arrow {
+    color: white;
+    font-size: 12px;
+    margin-left: 5px;
+    transition: transform 0.3s ease; /* Animación al hacer hover */
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 70px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px;
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu-premium {
+    position: relative;
+    display: inline-block;
+    /* Conexión hover */
+    padding-bottom: 15px;
+    margin-bottom: -15px;
+}
+
+.dropdown-menu-premium {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 40px; 
+    background-color: #282828; /* Fondo oscuro como Spotify */
+    border-radius: 4px;
+    padding: 30px;
+    margin: 5px;
+    min-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+.dropdown-menu-premium a {
+    text-decoration: none;
+    font-size: 18px;
+    gap: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.dropdown-menu-premium p {
+    color: gray;
+}
+
+.dropdown-menu .log-color {
+    display: block;
+    color: gray;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 2px;
+}
+
+.dropdown-menu .acc-color {
+    display: block;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 2px;
+}
+
+
+.dropdown-menu a:hover {
+    background-color: white;
+    color: #1DB954; /* Fondo gris oscuro al pasar el mouse */
+}
+
+.menu-premium:hover  .dropdown-menu-premium,
+.dropdown-menu-premium:hover {
+    display: block;
+}
+
+.menu-premium:hover {
+    padding-bottom: 5px;
+    margin-bottom: -5px;
+}
+
+.dropdown-menu-premium.show {
+    display: block;
+}
+
+
+
+.dropdown-menu.show {
+    display: block;
+}
+
+
+
+.dropdown-arrow.rotated {
+    transform: rotate(180deg);
+}
+
+.menu-premium-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px; /* Zona de seguridad */
+    background: transparent;
+}
+
+
